@@ -61,13 +61,15 @@ public class Main {
                 System.exit(2);
             }
 
-            if (args.length == 3 && "--out".equals(args[1])) {
-                out = Paths.get(args[2]);
-            }
-            else {
-                System.err.println("Неизвестный флаг" + args[1]);
-                printUsage();
-                System.exit(3);
+            if (args.length > 1) {
+                if ("--out".equals(args[1])) {
+                    out = Paths.get(args[2]);
+                }
+                else {
+                    System.err.println("Неизвестный флаг: " + args[1]);
+                    printUsage();
+                    System.exit(3);
+                }
             }
 
             byte[] bytes = Files.readAllBytes(input);
