@@ -15,7 +15,7 @@ public class Main {
 
         @Override
         public String toString() {
-            return String.format("Lines: %d%nWords: %d%nCharacters: %d%n", lines, words, characters);
+            return String.format("Строки: %d%nСлова: %d%nСимволы: %d%n", lines, words, characters);
         }
     }
 

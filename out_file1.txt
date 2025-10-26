@@ -1,0 +1,4 @@
+Статистика файла: file1.txt
+Lines: 41
+Words: 1220
+Characters: 7181
